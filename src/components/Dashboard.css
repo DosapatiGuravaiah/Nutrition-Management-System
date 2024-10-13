@@ -1,0 +1,93 @@
+/* src/components/Dashboard.css */
+
+body {
+  margin: 0; /* Reset default margin */
+  height: 100vh; /* Ensure the body takes full height */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center; /* Center the text */
+  color: white;
+  padding: 0 350px; /* Remove padding */
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/009/435/586/small_2x/abstract-black-sci-fi-tunnel-and-white-light-seamless-loop-4k-3d-animation-background-free-video.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Cover entire area */
+  animation: moveBackground 10s linear infinite; /* Animation for moving background */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: center top; /* Starting position */
+  }
+  100% {
+    background-position: center bottom; /* Ending position */
+  }
+}
+
+.dashboard h1 {
+  font-size: 3rem; /* Title font size */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.dashboard p {
+  font-size: 1.5rem; /* Description font size */
+  color: #ddd; /* Text color */
+  font-weight: bold; /* Make text bold */
+  margin-bottom: 30px; /* Space below description */
+}
+
+.image-container {
+  margin-bottom: 20px; /* Space below image */
+}
+
+.dashboard-image {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of links */
+  justify-content: center; /* Center the links */
+  gap: 15px; /* Space between links */
+}
+
+.links a {
+  font-size: 1.1rem; /* Link font size */
+  color: #fff; /* Link text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Padding for links */
+  border: 1px solid #fff; /* White border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
+}
+
+.links a:hover {
+  background-color: #fff; /* Background color on hover */
+  color: #000; /* Text color on hover */
+}
+
+@media (max-width: 600px) {
+  .dashboard h1 {
+    font-size: 2rem; /* Smaller title font size on small screens */
+  }
+
+  .dashboard p {
+    font-size: 1.2rem; /* Smaller description font size on small screens */
+  }
+
+  .links a {
+    font-size: 1rem; /* Smaller link font size on small screens */
+    padding: 8px 15px; /* Smaller padding for links on small screens */
+  }
+}

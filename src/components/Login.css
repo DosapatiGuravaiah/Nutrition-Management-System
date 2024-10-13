@@ -1,0 +1,62 @@
+
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+  padding: 30px;
+  border-radius: 20px; /* Increased radius for a bubble effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for a more pronounced bubble look */
+  width: 300px; /* Fixed width */
+  backdrop-filter: blur(10px); /* Adds a blur effect behind the form */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 24px; /* Font size */
+  color: #333; /* Dark color for text */
+  text-align: center; /* Center the heading */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size for inputs */
+}
+
+.login-form input:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners for button */
+  font-size: 16px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.login-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.login-form p {
+  margin-top: 10px;
+  font-size: 14px; /* Font size for links */
+  text-align: center; /* Center the text */
+}
+
+.login-form a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.login-form a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
